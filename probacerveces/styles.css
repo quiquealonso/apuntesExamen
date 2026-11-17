@@ -122,3 +122,38 @@ body {
     background: #2b2118;
     color: #f4efe6;
 }
+
+
+/* ===== Añadido: buscador, estadísticas y paginación ===== */
+#filtros input {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+    border: 2px solid #2b2118;
+    border-radius: 8px;
+}
+
+#stats {
+    margin-bottom: 12px;
+    padding: 10px 14px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+#paginacion {
+    margin-bottom: 16px;
+}
+
+#paginacion button {
+    padding: 6px 14px;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.col ol {
+    margin: 0 0 14px;
+    padding-left: 20px;
+    font-size: 0.85rem;
+    color: #555;
+}
