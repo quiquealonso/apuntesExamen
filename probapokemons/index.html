@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pokedex</title>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <form id="formBuscar">
+      <input type="text" id="nombreBuscar" placeholder="Busca un pokemon en la API..." />
+      <button type="submit">Buscar</button>
+    </form>
+
+    <div id="filtros">
+      <input type="text" id="buscador" placeholder="Filtrar esta página..." />
+      <select id="orden">
+        <option value="id">Por número</option>
+        <option value="name">Por nombre</option>
+        <option value="stats">Por stats totales</option>
+      </select>
+      <select id="perPage">
+        <option value="10">10</option>
+        <option value="20" selected>20</option>
+        <option value="50">50</option>
+      </select>
+    </div>
+
+    <select id="selectTipo"></select>
+    <div id="buttons"></div>
+    <div id="paginacion"></div>
+    <div id="stats"></div>
+    <main>
+      <div id="content"></div>
+      <div id="detail"><p>Haz click en un pokemon</p></div>
+    </main>
+  </body>
+</html>

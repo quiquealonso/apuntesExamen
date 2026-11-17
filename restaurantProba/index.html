@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Restaurants</title>
+</head>
+<body>
+  <form id="formFiltre">
+    <select id="tipus">
+      <option value="">Tots els tipus de cuina</option>
+    </select>
+    <input type="text" id="buscador" placeholder="Buscar..." />
+  </form>
+
+  <div id="paginacio">
+    <button id="anterior">Anterior</button>
+    <span id="numPagina">1</span>
+    <button id="seguent">Següent</button>
+  </div>
+
+  <div id="container"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

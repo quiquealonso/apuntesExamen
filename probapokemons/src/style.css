@@ -1,0 +1,88 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 20px;
+  background: #f2f2f2;
+}
+
+#filtros, #buttons, #paginacion, #selectTipo, #formBuscar {
+  margin-bottom: 10px;
+}
+
+button {
+  margin: 2px;
+  cursor: pointer;
+}
+
+/* contenido a la izquierda, detalle a la derecha */
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+/* rejilla de cartas */
+#content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  font-size: 16px;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.tipo {
+  background: #ddd;
+  border-radius: 10px;
+  padding: 2px 8px;
+  margin: 2px;
+  font-size: 12px;
+}
+
+/* panel de detalle que se queda fijo al hacer scroll */
+#detail {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  position: sticky;
+  top: 20px;
+  text-transform: capitalize;
+}
+
+#detail img {
+  width: 150px;
+}
+
+#detail table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#detail td, #detail th {
+  border-bottom: 1px solid #ddd;
+  padding: 4px;
+  text-align: left;
+}
+
+#stats {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
